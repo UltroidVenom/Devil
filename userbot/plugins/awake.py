@@ -28,7 +28,7 @@ from platform import python_version, uname
 
 ALIVE_PHOTTO = Config.ALIVE_PHOTTO
 if ALIVE_PHOTTO is None:
-  ALIVE_PHOTTO = "https://telegra.ph/file/1a521001683a360053b32.jpg"
+  ALIVE_PHOTTO = "https://telegra.ph/file/d1398de3e8ba9c0d1ea84.jpg"
 
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "𝙳𝚎𝚟𝚒𝚕"
@@ -50,7 +50,7 @@ async def amireallyalive(awake):
    ALIVE_MESSAGE += "🔶 𝙳𝙴𝚅𝙸𝙻 𝚅𝙴𝚁𝚂𝙸𝙾𝙽 🔶 :   2.0\n\n"
    ALIVE_MESSAGE += f"🔷 𝚄𝙿𝚃𝙸𝙼𝙴 🔷 : {uptm}\n\n"
    ALIVE_MESSAGE += f"💠 𝙼𝚈 𝙱𝙾𝚂𝚂 💠: [{DEFAULTUSER}](tg://user?id={tag})\n\n"
-   ALIVE_MESSAGE += "🔰 𝙶𝚁𝙾𝚄𝙿 🔰 : [SUPPORT](https://t.me/deviluserbot)\n\n"
+   ALIVE_MESSAGE += "🔰 𝙶𝚁𝙾𝚄𝙿 🔰 : [SUPPORT](https://t.me/CrackMonkeyChats)\n\n"
    ALIVE_MESSAGE += f"💠 [𝙳𝙴𝙿𝙻𝙾𝚈](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2Flucifeermorningstar%2FDevil&template=https%3A%2F%2Fgithub.com%2Flucifeermorningstar%2FDevil) 𝚈𝙾𝚄𝚁 𝙾𝚆𝙽 𝙾𝙿 [{BOT}](http://github.com/lucifeermorningstar/Devil)  💠\n"   
    await awake.delete() 
    await borg.send_file(awake.chat_id, ALIVE_PHOTTO,caption=ALIVE_MESSAGE)
